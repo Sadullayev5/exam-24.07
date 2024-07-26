@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Jomolhari";
+    src: url(../fonts/Jomolhari-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 86px;
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family: "inter";
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.hero{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &-title{
+        width: 100%;
+        max-width: 956px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Jomolhari";
+
+        h2{
+            font-size: 40px;
+            line-height: 64px;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        max-width: 956px;
+        img{
+            width: 100%;
+            max-width: 956px;
+            
+            height: 376px;
+            object-fit: cover;
+        }
+    }
+
+    &-description{
+        text-align: center;
+        width: 100%;
+        max-width: 956px;
+        font-family: Jomolhari;
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: 96px;
+    }
+}
+
+.wrapper{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.return{
+    text-decoration: none;
+    padding: 4px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}

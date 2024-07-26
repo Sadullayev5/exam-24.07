@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Jomolhari";
+    src: url(../fonts/Jomolhari-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 86px;
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family: "inter";
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.hero__image{
+    width: 100%;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.hero__content{
+    width: 100%;
+    margin-top: 38px;
+    padding: 0px 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+    h2{
+        font-family: "Jomolhari";
+        font-size: 46px;
+        line-height: 74px;
+    }
+
+    
+}
+
+.card__wrapper{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.card{
+    width: 100%;
+    max-width: 276px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    border: 3px solid #F0DE36;
+    transition: 0.5s;
+    cursor: pointer;
+
+    .card__image{
+        img{
+            width: 100%;
+            max-width: 266px;
+            height: 172px;
+            object-fit: cover;
+        }
+    }   
+    
+    .card__content{
+        min-height: 141px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+        margin: 8px;
+
+        h3{
+            font-family: "Jomolhari";
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        p{
+            font-family: "Jomolhari";
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    .card__profile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0px 10px;
+
+        .card__profile__image{
+            img{
+                width: 36px;
+                height: 36px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        p{
+            font-family: "Jomolhari";
+            font-size: 12px;
+            line-height: 18px; 
+        }
+
+        p:nth-child(2){
+            color: #787878;
+        }
+    }
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+

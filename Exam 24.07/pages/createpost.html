@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/createpost.css">
+</head>
+<body>
+    <div class="profile">
+    </div>
+    <h2>Create New Post</h2>
+    <form id="post-form">
+        <div class="title">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div class="post-image">
+            <label for="postImage">Post Image</label>
+            <input id="postImage" type="url">
+        </div>
+        <div class="tags">
+            <label for="tags">Tags</label>
+            <input id="tags" type="text">
+        </div>
+        <div class="description">
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="140" rows="10"></textarea>
+        </div>
+        <button type="submit">Create Post</button>
+    </form>
+    <script src="../script/createpost.js"></script>
+</body>
+</html>
